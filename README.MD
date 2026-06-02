@@ -1,4 +1,4 @@
-# 🤖 Multi AI Agent System (Confidence Scoring & Orchestration)
+#  Multi AI Agent System (Confidence Scoring & Orchestration)
 
 A scalable, decoupled Multi-Agent LLMOps project featuring a custom orchestration engine. This project leverages the **Supervisor/Router pattern** coupled with a **Map-Reduce (Scatter-Gather)** execution approach to dynamically parse user queries, determine the most capable expert AI agents, securely run and validate their output in parallel, and aggregate the results into a finalized synthesized response.
 
@@ -52,7 +52,7 @@ The cornerstone of this project. Steps include:
 3. **Execution:** Groups the filtered agents and fires them asynchronously in parallel using Python's `asyncio.gather`. 
 4. **Aggregation:** Ingests the independent responses from chosen experts. Instructs the Aggregator LLM to consolidate overlapping information and output an articulate response.
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ### Prerequisites
 - Python 3.10+
@@ -78,7 +78,7 @@ Run the system via the Python module entry point (this launches both the FastAPI
 python -m app.main
 ```
 
-## 🛠️ Built With
+##  Built With
 - **LangChain & LangGraph:** Core LLM wrappers, routing configuration, and agent tool execution.
 - **FastAPI:** High performance asynchronous backend.
 - **Streamlit:** Rapid UI prototyping.
