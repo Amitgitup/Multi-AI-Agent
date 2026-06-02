@@ -1,0 +1,24 @@
+2026-03-15 14:03:33,296 - INFO - Starting backend service
+2026-03-15 14:03:35,305 - INFO - Strating frontend service
+2026-03-15 14:04:58,551 - INFO - Sending requests to backend
+2026-03-15 14:04:58,576 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-15 14:04:59,165 - INFO - Search tool enabled for this query
+2026-03-15 14:05:00,004 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 14:05:03,554 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 14:05:03,561 - INFO - Successfully got response from AI Agent groq/llama-3.3-70b-versatile
+2026-03-15 14:05:03,565 - INFO - Successfully received response from the backend
+2026-03-15 14:05:03,567 - ERROR - Error occured while sending request to backend: str.replace() takes no keyword arguments
+2026-03-15 14:07:50,563 - INFO - Sending requests to backend
+2026-03-15 14:07:50,569 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-15 14:07:50,622 - INFO - Search tool enabled for this query
+2026-03-15 14:07:51,118 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 14:07:53,002 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 14:07:53,006 - INFO - Successfully got response from AI Agent groq/llama-3.3-70b-versatile
+2026-03-15 14:07:53,009 - INFO - Successfully received response from the backend
+2026-03-15 17:55:19,700 - INFO - Sending requests to backend
+2026-03-15 17:55:19,758 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-15 17:55:19,914 - INFO - Search tool enabled for this query
+2026-03-15 17:55:31,870 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 17:55:34,914 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-15 17:55:34,921 - INFO - Successfully got response from AI Agent groq/llama-3.3-70b-versatile
+2026-03-15 17:55:34,925 - INFO - Successfully received response from the backend

@@ -1,0 +1,73 @@
+2026-06-03 01:02:45,641 - INFO - Starting backend service...
+2026-06-03 01:02:47,654 - INFO - Starting frontend service...
+2026-06-03 01:04:12,218 - INFO - Sending request to backend.
+2026-06-03 01:04:12,231 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-06-03 01:04:12,712 - INFO - Calling Router ...
+2026-06-03 01:04:13,278 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:13,330 - INFO - Router output: [('medical', 0.9), ('research', 0.7)]
+2026-06-03 01:04:13,331 - INFO - Final Selected agents: ['medical', 'research']
+2026-06-03 01:04:17,746 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-06-03 01:04:17,748 - ERROR - Agent medical failed: Error code: 400 - {'error': {'message': 'tool call validation failed: attempted to call tool \'wikipedia{"query": "Leukemia"}\' which was not in request.tools', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=wikipedia{"query": "Leukemia"}></function>'}}
+2026-06-03 01:04:17,774 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:22,390 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:25,603 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:28,209 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:29,215 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:29,970 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:04:29,974 - INFO - Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2026-06-03 01:04:42,721 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:43,491 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:04:43,491 - INFO - Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2026-06-03 01:04:56,122 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:04:56,910 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:04:56,910 - INFO - Retrying request to /openai/v1/chat/completions in 13.000000 seconds
+2026-06-03 01:05:10,417 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:05:13,402 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:05:13,402 - INFO - Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2026-06-03 01:05:26,260 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:05:29,181 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:05:29,181 - INFO - Retrying request to /openai/v1/chat/completions in 12.000000 seconds
+2026-06-03 01:05:41,788 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:05:42,749 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:05:42,751 - INFO - Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-06-03 01:05:57,436 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:05:58,182 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:05:58,184 - INFO - Retrying request to /openai/v1/chat/completions in 15.000000 seconds
+2026-06-03 01:06:13,721 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:06:17,201 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-06-03 01:06:17,201 - INFO - Retrying request to /openai/v1/chat/completions in 14.000000 seconds
+2026-06-03 01:06:31,890 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:06:31,894 - ERROR - Agent research failed: Recursion limit of 25 reached without hitting a stop condition. You can increase the limit by setting the `recursion_limit` config key.
+For troubleshooting, visit: https://python.langchain.com/docs/troubleshooting/errors/GRAPH_RECURSION_LIMIT
+2026-06-03 01:06:31,894 - INFO - Sucessfully generated response via orchestrator.
+2026-06-03 01:06:58,988 - INFO - Sending request to backend.
+2026-06-03 01:06:58,994 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-06-03 01:06:59,129 - INFO - Calling Router ...
+2026-06-03 01:07:00,330 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised PermissionDenied: 403 This key has been blocked from using Gemini API for security purposes. Please create a new API key at https://ai.studio/api-keys. Learn more at https://ai.google.dev/gemini-api/docs/api-key#blocked-keys..
+2026-06-03 01:07:02,991 - ERROR - Orchestrator failed: 403 This key has been blocked from using Gemini API for security purposes. Please create a new API key at https://ai.studio/api-keys. Learn more at https://ai.google.dev/gemini-api/docs/api-key#blocked-keys.
+2026-06-03 01:07:02,991 - INFO - Sucessfully generated response via orchestrator.
+2026-06-03 01:07:03,143 - INFO - Response received sucessfully.
+2026-06-03 01:23:10,360 - INFO - Sending request to backend.
+2026-06-03 01:23:10,364 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-06-03 01:23:10,394 - INFO - Calling Router ...
+2026-06-03 01:23:11,031 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:23:11,037 - INFO - Router output: [('medical', 0.9), ('research', 0.7)]
+2026-06-03 01:23:11,037 - INFO - Final Selected agents: ['medical', 'research']
+2026-06-03 01:23:11,703 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-06-03 01:23:11,706 - ERROR - Agent medical failed: Error code: 400 - {'error': {'message': "Failed to call a function. Please adjust your prompt. See 'failed_generation' for more details.", 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=wikipedia{"query": "Leukemia"}</function>'}}
+2026-06-03 01:23:11,742 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 400 Bad Request"
+2026-06-03 01:23:11,751 - ERROR - Agent research failed: Error code: 400 - {'error': {'message': 'tool call validation failed: attempted to call tool \'wikipedia={"query": "Leukemia"}\' which was not in request.tools', 'type': 'invalid_request_error', 'code': 'tool_use_failed', 'failed_generation': '<function=wikipedia={"query": "Leukemia"}></function>'}}
+2026-06-03 01:23:11,751 - INFO - Sucessfully generated response via orchestrator.
+2026-06-03 01:23:11,950 - INFO - Response received sucessfully.
+2026-06-03 01:35:23,260 - INFO - Starting backend service...
+2026-06-03 01:35:25,271 - INFO - Starting frontend service...
+2026-06-03 01:37:31,253 - INFO - Sending request to backend.
+2026-06-03 01:37:31,313 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-06-03 01:37:31,697 - INFO - Calling Router ...
+2026-06-03 01:37:32,042 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:37:32,074 - INFO - Router output: [('research', 1.0)]
+2026-06-03 01:37:32,074 - INFO - Final Selected agents: ['research']
+2026-06-03 01:37:33,292 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:37:35,292 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-06-03 01:37:35,295 - INFO - Sucessfully generated response via orchestrator.
+2026-06-03 01:37:48,668 - INFO - Response received sucessfully.

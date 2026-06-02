@@ -1,0 +1,308 @@
+2026-03-18 00:41:21,787 - INFO - Starting backend service...
+2026-03-18 00:41:23,801 - INFO - Starting frontend service...
+2026-03-18 00:42:07,350 - INFO - Sending request to backend.
+2026-03-18 00:42:07,361 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-18 00:42:07,705 - INFO - Calling Router ...
+2026-03-18 00:42:08,255 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 00:42:08,270 - INFO - Router output: [('research', 1.0)]
+2026-03-18 00:42:08,270 - INFO - Final Selected agents: ['research']
+2026-03-18 00:42:09,971 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 00:42:09,981 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=latest+papers&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:42:11,027 - INFO - Got first page: 100 of 707149 total results
+2026-03-18 00:42:11,886 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 00:42:11,895 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=latest+paper+arxiv&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:42:43,344 - INFO - Sleeping: 3.000000 seconds
+2026-03-18 00:42:46,357 - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=latest+paper+arxiv&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:43:32,735 - INFO - Sleeping: 3.000000 seconds
+2026-03-18 00:43:35,745 - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=latest+paper+arxiv&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:43:36,191 - INFO - Sleeping: 3.000000 seconds
+2026-03-18 00:43:39,194 - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=latest+paper+arxiv&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:44:07,369 - INFO - Frontend communication error: HTTPConnectionPool(host='127.0.0.1', port=9999): Read timed out. (read timeout=120)
+2026-03-18 00:44:40,971 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 429 Too Many Requests"
+2026-03-18 00:44:40,974 - ERROR - Agent research failed: Error code: 429 - {'error': {'message': 'Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01jygv0sapftmr67efz4dfxpgc` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99828, Requested 2367. Please try again in 31m36.48s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing', 'type': 'tokens', 'code': 'rate_limit_exceeded'}}
+2026-03-18 00:44:40,975 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 00:45:00,858 - INFO - Sending request to backend.
+2026-03-18 00:45:00,863 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 00:45:00,902 - INFO - Calling Router ...
+2026-03-18 00:45:05,148 - INFO - Router output: [('research', 1.0)]
+2026-03-18 00:45:05,148 - INFO - Final Selected agents: ['research']
+2026-03-18 00:45:20,123 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 00:45:24,660 - INFO - Response received sucessfully.
+2026-03-18 00:46:18,199 - INFO - Sending request to backend.
+2026-03-18 00:46:18,206 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 00:46:18,211 - INFO - Calling Router ...
+2026-03-18 00:46:20,248 - INFO - Router output: [('research', 1.0)]
+2026-03-18 00:46:20,248 - INFO - Final Selected agents: ['research']
+2026-03-18 00:46:37,944 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 00:46:38,157 - INFO - Response received sucessfully.
+2026-03-18 00:48:18,524 - INFO - Sending request to backend.
+2026-03-18 00:48:18,552 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 00:48:18,556 - INFO - Calling Router ...
+2026-03-18 00:48:23,728 - INFO - Router output: [('research', 1.0)]
+2026-03-18 00:48:23,729 - INFO - Final Selected agents: ['research']
+2026-03-18 00:48:45,007 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 00:49:00,748 - INFO - Response received sucessfully.
+2026-03-18 00:49:29,877 - INFO - Sending request to backend.
+2026-03-18 00:49:29,882 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 00:49:29,887 - INFO - Calling Router ...
+2026-03-18 00:49:32,817 - INFO - Router output: [('research', 1.0)]
+2026-03-18 00:49:32,818 - INFO - Final Selected agents: ['research']
+2026-03-18 00:49:36,227 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=latest+papers&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:49:53,455 - INFO - Sleeping: 3.000000 seconds
+2026-03-18 00:49:56,465 - INFO - Requesting page (first: True, try: 1): https://export.arxiv.org/api/query?search_query=latest+papers&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:50:12,207 - INFO - Sleeping: 3.000000 seconds
+2026-03-18 00:50:15,217 - INFO - Requesting page (first: True, try: 2): https://export.arxiv.org/api/query?search_query=latest+papers&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:51:02,352 - INFO - Sleeping: 3.000000 seconds
+2026-03-18 00:51:05,359 - INFO - Requesting page (first: True, try: 3): https://export.arxiv.org/api/query?search_query=latest+papers&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 00:51:14,853 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 00:51:15,951 - INFO - Response received sucessfully.
+2026-03-18 01:13:24,053 - INFO - Starting backend service...
+2026-03-18 01:13:26,055 - INFO - Starting frontend service...
+2026-03-18 01:14:19,758 - INFO - Sending request to backend.
+2026-03-18 01:14:19,768 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 01:14:19,817 - INFO - Calling Router ...
+2026-03-18 01:14:23,767 - INFO - Router output: [('research', 1.0)]
+2026-03-18 01:14:23,767 - INFO - Final Selected agents: ['research']
+2026-03-18 01:14:26,134 - INFO - Requesting page (first: True, try: 0): https://export.arxiv.org/api/query?search_query=Implement+basic+Transformer+architecture+using+pytorch&id_list=&sortBy=relevance&sortOrder=descending&start=0&max_results=100
+2026-03-18 01:14:28,787 - INFO - Got first page: 100 of 1573708 total results
+2026-03-18 01:14:36,221 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 01:14:40,372 - INFO - Response received sucessfully.
+2026-03-18 01:15:22,976 - INFO - Sending request to backend.
+2026-03-18 01:15:22,983 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 01:15:22,987 - INFO - Calling Router ...
+2026-03-18 01:15:29,455 - INFO - Router output: [('research', 1.0)]
+2026-03-18 01:15:29,455 - INFO - Final Selected agents: ['research']
+2026-03-18 01:15:30,986 - WARNING - Retrying langchain_google_genai.chat_models._achat_with_retry.<locals>._achat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 28.928345356s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 28
+}
+].
+2026-03-18 01:15:33,399 - ERROR - Agent research failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 26.325562437s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 26
+}
+]
+2026-03-18 01:15:33,401 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 01:15:33,613 - INFO - Response received sucessfully.
+2026-03-18 01:18:37,024 - INFO - Sending request to backend.
+2026-03-18 01:18:37,030 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 01:18:37,033 - INFO - Calling Router ...
+2026-03-18 01:18:37,947 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 21.771837417s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 21
+}
+].
+2026-03-18 01:18:40,384 - ERROR - Orchestrator failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 19.349937052s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 19
+}
+]
+2026-03-18 01:18:40,384 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 01:18:40,565 - INFO - Response received sucessfully.
+2026-03-18 01:19:21,173 - INFO - Sending request to backend.
+2026-03-18 01:19:21,178 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 01:19:21,181 - INFO - Calling Router ...
+2026-03-18 01:19:21,827 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 37.893493456s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 37
+}
+].
+2026-03-18 01:19:24,233 - ERROR - Orchestrator failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 35.459890493s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 35
+}
+]
+2026-03-18 01:19:24,234 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 01:19:24,413 - INFO - Response received sucessfully.
+2026-03-18 01:19:53,898 - INFO - Sending request to backend.
+2026-03-18 01:19:53,903 - INFO - Received request for model : gemini/gemini-2.5-flash
+2026-03-18 01:19:53,906 - INFO - Calling Router ...
+2026-03-18 01:19:54,458 - WARNING - Retrying langchain_google_genai.chat_models._chat_with_retry.<locals>._chat_with_retry in 2.0 seconds as it raised ResourceExhausted: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 5.235043226s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 5
+}
+].
+2026-03-18 01:19:56,883 - ERROR - Orchestrator failed: 429 You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. 
+* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-2.5-flash
+Please retry in 2.8386971s. [links {
+  description: "Learn more about Gemini API quotas"
+  url: "https://ai.google.dev/gemini-api/docs/rate-limits"
+}
+, violations {
+  quota_metric: "generativelanguage.googleapis.com/generate_content_free_tier_requests"
+  quota_id: "GenerateRequestsPerDayPerProjectPerModel-FreeTier"
+  quota_dimensions {
+    key: "model"
+    value: "gemini-2.5-flash"
+  }
+  quota_dimensions {
+    key: "location"
+    value: "global"
+  }
+  quota_value: 20
+}
+, retry_delay {
+  seconds: 2
+}
+]
+2026-03-18 01:19:56,884 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 01:19:57,080 - INFO - Response received sucessfully.
+2026-03-18 12:39:24,308 - INFO - Starting backend service...
+2026-03-18 12:39:26,320 - INFO - Starting frontend service...
+2026-03-18 12:40:03,005 - INFO - Sending request to backend.
+2026-03-18 12:40:03,016 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-18 12:40:03,657 - INFO - Calling Router ...
+2026-03-18 12:40:04,133 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 403 Forbidden"
+2026-03-18 12:40:04,207 - ERROR - Orchestrator failed: Error code: 403 - {'error': {'message': 'Access denied. Please check your network settings.'}}
+2026-03-18 12:40:04,207 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 12:40:04,406 - INFO - Response received sucessfully.
+2026-03-18 12:41:00,194 - INFO - Sending request to backend.
+2026-03-18 12:41:00,210 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-18 12:41:00,265 - INFO - Calling Router ...
+2026-03-18 12:41:00,586 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:00,607 - INFO - Router output: [('research', 1.0)]
+2026-03-18 12:41:00,607 - INFO - Final Selected agents: ['research']
+2026-03-18 12:41:02,453 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:05,886 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:06,961 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:06,963 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 12:41:14,199 - INFO - Response received sucessfully.
+2026-03-18 12:41:21,485 - INFO - Sending request to backend.
+2026-03-18 12:41:21,490 - INFO - Received request for model : groq/llama-3.3-70b-versatile
+2026-03-18 12:41:21,539 - INFO - Calling Router ...
+2026-03-18 12:41:21,873 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:21,875 - INFO - Router output: [('research', 1.0)]
+2026-03-18 12:41:21,876 - INFO - Final Selected agents: ['research']
+2026-03-18 12:41:22,698 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:25,825 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:27,016 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-03-18 12:41:27,018 - INFO - Sucessfully generated response via orchestrator.
+2026-03-18 12:41:42,392 - INFO - Response received sucessfully.
+2026-03-18 22:35:43,450 - INFO - Starting backend service...
+2026-03-18 22:35:45,456 - INFO - Starting frontend service...
