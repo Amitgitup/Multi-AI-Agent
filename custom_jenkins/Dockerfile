@@ -1,10 +1,7 @@
-# Use the Jenkins image as the base image
 FROM jenkins/jenkins:lts
 
-# Switch to root user
 USER root
 
-# Install utilities commonly needed later
 RUN apt-get update && \
     apt-get install -y \
     docker.io \
@@ -14,8 +11,8 @@ RUN apt-get update && \
     python3-pip && \
     apt-get clean
 
-RUN groupadd -f docker && \
-    usermod -aG docker jenkins
+# Match Docker Desktop's docker group GID
+RUN groupadd -g 1001 docker-host || true && \
+    usermod -aG 1001 jenkins
 
-# Switch back to Jenkins user
 USER jenkins

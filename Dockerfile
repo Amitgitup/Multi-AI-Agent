@@ -1,28 +1,28 @@
 ## Parent image
 FROM python:3.10-slim
 
-## Essential Environment variables (Real-Time Logging)
+## Essential environment variables
 ENV PYTHONDONTWRITEBYTECODE=1 \
-    PYTHONUNBUFFERED = 1        
+    PYTHONUNBUFFERED=1
 
-## Set working directory inside the container
+## Work directory inside the docker container
 WORKDIR /app
 
-## Install system dependencies
+## Installing system dependancies
 RUN apt-get update && apt-get install -y \
     build-essential \
     curl \
     && rm -rf /var/lib/apt/lists/*
 
-## Copy the project files into the container
+## Copying ur all contents from local to app
 COPY . .
 
-## Install dependencies
+## Run setup.py
 RUN pip install --no-cache-dir -e .
 
-## Expose ports (Frontend - 8501 & Backend - 9999)
+# Used PORTS
 EXPOSE 8501
 EXPOSE 9999
 
-## Run the application
+# Run the app 
 CMD ["python", "app/main.py"]
