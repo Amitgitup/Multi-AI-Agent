@@ -97,12 +97,11 @@ GitHub Push → Jenkins Pipeline → SonarQube Analysis → Docker Build → AWS
 - **ECS Cluster:** `multi-ai-agent-cluster` — 1 active service, 1/1 tasks running
 - **Task Definition:** `multi-ai-agent-def:1` — Deployment status: Success
 - **VPC Security Group:** Custom inbound rules for ports 8501 (Streamlit) and 9999 (FastAPI)
-
-> 📸 **Screenshots of live deployment, Jenkins console, SonarQube dashboard, and ECS cluster are available in `/assets/screenshots/`**
+> 📸 **Screenshots of live deployment, Jenkins console, SonarQube dashboard, and ECS cluster are available in the [assets/screenshots/](assets/screenshots/) directory**
 
 ---
 
-## 🚀 How to Run Locally
+##  How to Run Locally
 
 ### Prerequisites
 - Python 3.10+
@@ -167,13 +166,19 @@ Multi-AI-Agent/
 │   ├── frontend/
 │   │   └── ui.py               # Streamlit UI
 │   ├── core/
+│   │   ├── agents/             # Expert Logic (Medical, Research, Coding)
+│   │   ├── tools/              # Wikipedia, Tavily, Arxiv bindings
+│   │   ├── memory_store.py     # Session memory tracking
 │   │   └── orchestrator.py     # Core routing & execution engine
 │   └── main.py                 # Entry point
-├── custom_jenkins/             # Jenkins pipeline config
-├── Dockerfile
-├── setup.py
-├── requirements.txt
-└── README.md
+├── assets/
+│   └── screenshots/            # Live deployment UI & CI/CD proof
+├── custom_jenkins/             # Jenkins pipeline plugin configuration
+├── Dockerfile                  # Application Containerization
+├── Jenkinsfile                 # Automated CI/CD Pipeline logic
+├── setup.py                    # Package configuration
+├── requirements.txt            # Python dependencies
+└── README.md                   # Project Documentation
 ```
 
 ---
